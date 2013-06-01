@@ -4,10 +4,10 @@ use strict;
 use Data::Dumper;
 use DBI;
 
-my $dbname = "ZoominQA";
+my $dbname = "testdb";
 
 my $data_source = "dbi:Sybase:server=192.168.5.104";
-my $dbh = DBI->connect($data_source, "sa", "zoomin")
+my $dbh = DBI->connect($data_source, "abcd123", "abcd123")
   or die "Can't connect to $data_source: $DBI::errstr";
 
 
